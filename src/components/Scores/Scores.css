@@ -1,0 +1,60 @@
+.score-card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: fit-content;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.mat-mini-fab.second {
+    background-color: #994ec8;
+    margin-left: 1em;
+}
+
+.mat-mini-fab.first {
+    background-color: #484e6d;
+    margin-right: 1em;
+}
+
+.mat-mini-fab {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center !important;
+    margin: 0 auto;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0, 0, 0);
+    transition: background .4s cubic-bezier(.25, .8, .25, 1), box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    min-width: 0;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;;
+    padding: 0;
+    flex-shrink: 0;
+    font-size: 1.5em;
+}
+
+.col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.text-transition .text-transition_inner {
+    left: 14px !important;
+}

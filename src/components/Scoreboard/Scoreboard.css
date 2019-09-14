@@ -1,0 +1,72 @@
+.w3-table, .w3-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 60%;
+    display: table;
+    position: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sbTitle {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.w3-table-all {
+    border: 1px solid #ccc
+}
+
+.w3-bordered tr, .w3-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.w3-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.w3-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.w3-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.w3-hoverable tbody tr:hover, .w3-ul.w3-hoverable li:hover {
+    background-color: #ccc !important;
+}
+
+.rounds:hover {
+    background-color: #ccc !important;
+}
+
+.rounds:active {
+    background-color: #ccc !important;
+}
+
+.w3-centered tr th, .w3-centered tr td {
+    text-align: center
+}
+
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child {
+    padding-left: 16px
+}
+
+.w3-light-grey, .w3-hover-light-grey:hover {
+    color: #000 !important;
+    background-color: #ca5c61 !important
+}
+
+.w3-bordered tr, .w3-table-all tr {
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,13 @@
+.user-card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.user-card-content div {
+    width: 50%;
+    margin: 0 auto;
+}
+

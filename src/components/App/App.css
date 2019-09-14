@@ -1,0 +1,21 @@
+
+.body {
+    width: 100%;
+
+    clear: both;
+    margin: auto;
+    padding-bottom: 100px;
+    overflow: auto;
+    min-height: 600px;
+}
+
+.header {
+    color: rgba(255, 255, 255, 0.8);
+    background-image: repeating-linear-gradient(to bottom right, #e96443 0%, #904e95 100%);
+}
+
+@media (min-height: 1200px) {
+    .body {
+        height: 1200px;
+    }
+}

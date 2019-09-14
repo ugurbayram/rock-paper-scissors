@@ -1,0 +1,112 @@
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.score {
+    margin-top: .5em;
+    margin-left: 2em;
+    font-size: 1.5em
+}
+
+.selectedWeapon {
+    color: background;
+}
+
+.rpc-image {
+    padding-top: 20px;
+}
+
+.mat-toolbar.mat-primary {
+    background-color: #1f1c6d;
+}
+
+p {
+    font-family: Lato;
+}
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: #484e6d;
+}
+
+.mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+    background-color: #994ec8;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.outContainer {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+.finish {
+    width: 80px;
+    height: 100px;
+    right: 10px;
+
+    position: absolute;
+
+}
+
+.finish:hover {
+    transform: scale(1.05);
+}
+
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 6px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: #fff;
+    color: rgba(0, 0, 0, .87);
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+
+.mat-card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+    .col-md-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}

@@ -1,0 +1,23 @@
+.username-dialog {
+
+}
+
+.username-dialog input {
+    display: block;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+}
+
+.username-dialog button {
+    appearance: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.username-dialog button:hover {
+    cursor: pointer;
+}

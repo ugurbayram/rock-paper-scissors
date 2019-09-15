@@ -2,6 +2,8 @@
 .header-container {
     height: 60px;
     padding: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .header-thumb {
@@ -15,6 +17,28 @@
 .header-thumb img {
     height: 140px;
     width: 135px;
+
+}
+
+
+.header-thumb-finish {
+    display: block;
+    position: relative;
+
+    margin-top: 3%;
+
+}
+
+.header-thumb-finish img:hover {
+    transform: scale(1.05);
+}
+
+.header-thumb-finish img {
+    width: 100px;
+    height: 120px;
+    float: right;
+    padding-right: 20px;
+
 }
 
 .header-title {

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Scoreboard.css'
 import {game, weapons} from "../../constants/Constants";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export const Scoreboard = props => {
 
@@ -19,22 +21,26 @@ export const Scoreboard = props => {
     }
 
     return (
-        <div className={"container"}>
-            <table className="w3-table-all w3-hoverable">
-                <caption className={"sbTitle"}>SCOREBOARD</caption>
-                <thead>
-                <tr className="w3-light-grey">
-                    <th>Rounds</th>
-                    <th>I Played</th>
-                    <th>Computer Played</th>
-                    <th>Result</th>
-                </tr>
-                </thead>
+        <div >
+            <Header/>
+            <div className={"container"}>
+                <table className="w3-table-all w3-hoverable">
+                    <caption className={"sbTitle"}>Game History</caption>
+                    <thead>
+                    <tr className="w3-light-grey">
+                        <th>Rounds</th>
+                        <th>I Played</th>
+                        <th>Computer Played</th>
+                        <th>Result</th>
+                    </tr>
+                    </thead>
 
-                {renderTableData()}
+                    {renderTableData()}
 
-            </table>
+                </table>
 
+            </div>
+            <Footer/>
         </div>
     )
 }

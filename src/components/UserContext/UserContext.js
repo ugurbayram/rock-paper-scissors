@@ -4,7 +4,7 @@ import '@reach/dialog/styles.css';
 import './UserContext.css';
 
 
-const UserContext = React.createContext({
+export const UserContext = React.createContext({
     user: { username: 'Anonymous Andy' },
 });
 export const UserProvider = props => {
@@ -12,22 +12,13 @@ export const UserProvider = props => {
     const [user, setUser] = React.useState(null);
     const [input, setInput] = React.useState('');
 
-    React.useEffect(() => {
-        if (input.trim().length >0) {
-            setUser({ id: input, username: input });
-        } else {
-            setShowingOverlay(true);
-        }
-
-    }, [user]);
-
     async function saveUsername(e) {
         e.preventDefault();
         if (!input.trim().length) {
             return;
         }
-
-        setUser({ id: input, username: input });
+        const user = {id: input, username: input};
+        setUser(user);
         setShowingOverlay(false);
     }
 
@@ -56,10 +47,3 @@ export const UserProvider = props => {
     return <UserContext.Provider value={{user}} {...props} />;
 
 };
-
-export function useUser() {
-    /*const {user} = React.useContext(UserProvider);
-    return user;*/
-    debugger;
-    return {username:"asdfasdf"};
-}

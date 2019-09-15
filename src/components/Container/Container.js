@@ -1,22 +1,21 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './Container.css';
 import {Players} from "../Players/Players";
 import {Weapon} from "../Weapon/Weapon";
 import {Scores} from "../Scores/Scores";
-import {Link} from "react-router-dom";
 import ReactNotification, {store} from 'react-notifications-component';
 import {messages, notificationTemplates} from "../../constants/Constants";
 import 'react-notifications-component/dist/theme.css';
-import finish from "../../assets/finish.png";
-import useUser from "../UserContext/UserContext";
+import {UserContext} from "../UserContext/UserContext";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 
 export default function Container(props) {
     const [myScore, setMyScore] = useState(0);
     const [yourScore, setYourScore] = useState(0);
     const [allScores, setAllScores] = useState([]);
-    const { user } = useUser();
-    alert(user);
+    const contextUser = useContext(UserContext);
     const getRoundDetail = (round) => {
 
         if (round.whoWin == 1) {
@@ -35,6 +34,32 @@ export default function Container(props) {
     }
 
     return (
+
+        <div >
+            <Header scoreboard={allScores}/>
+            <ReactNotification/>
+
+            <div className={"container"}>
+
+                <div className={"flex-center"}>
+                    <img className={"rpc-image"} src={require("../../assets/rpc-cartoon-small.png")} height={"240px"}/>
+                </div>
+                <Players username={contextUser.user.username}/>
+                <Scores myScore={myScore} yourScore={yourScore}/>
+                <div className="content">
+                    <div className={"mat-card"}>
+                        <div className={"mat-card-content"}>
+                            <h3> Make a Choice: </h3>
+                            <Weapon updateRound={getRoundDetail.bind(this)} who={"me"}/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <Footer/>
+        </div>
+    );
+    /*return (
 
         <div className={"body"}>
             <ReactNotification/>
@@ -61,14 +86,9 @@ export default function Container(props) {
                             <Weapon updateRound={getRoundDetail.bind(this)} who={"me"}/>
                         </div>
                     </div>
-                    <div className={"mat-card"}>
-                        <div className={"mat-card-content"}>
-                            <h3> Computer: </h3>
-                            <Weapon who={"you"}/>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
-    );
+    );*/
 }

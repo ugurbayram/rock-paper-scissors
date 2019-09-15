@@ -37,8 +37,9 @@ export const notificationTemplates = [
         animationIn: ["animated", "zoomIn"],
         animationOut: ["animated", "zoomOut"],
         dismiss: {
-            duration: 1500,
-            onScreen: false
+            duration: 1000,
+            onScreen: false,
+            delay: 0
         }
     },
     {
@@ -50,8 +51,9 @@ export const notificationTemplates = [
         animationIn: ["animated", "zoomIn"],
         animationOut: ["animated", "zoomOut"],
         dismiss: {
-            duration: 1500,
-            onScreen: false
+            duration: 1000,
+            onScreen: false,
+            delay: 0
         }
     },
     {
@@ -63,8 +65,9 @@ export const notificationTemplates = [
         animationIn: ["animated", "zoomIn"],
         animationOut: ["animated", "zoomOut"],
         dismiss: {
-            duration: 1500,
-            onScreen: false
+            duration: 1000,
+            onScreen: false,
+            delay: 0
         }
     }
 ]

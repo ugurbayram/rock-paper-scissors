@@ -37,7 +37,6 @@ export const Weapon = props => {
         computerClick.current.focus();
     }
 
-
     return (
 
         <div className={`content2 ${props.who}`}>

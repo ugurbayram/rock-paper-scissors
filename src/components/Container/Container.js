@@ -36,7 +36,7 @@ export default function Container(props) {
     return (
 
         <div >
-            <Header scoreboard={allScores}/>
+            <Header scoreboard={allScores} username={contextUser.user.username}/>
             <ReactNotification/>
 
             <div className={"container"}>

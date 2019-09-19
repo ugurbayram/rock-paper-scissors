@@ -22,7 +22,8 @@ export const Header = props => {
                         <div className={"header-thumb-finish"}>
                             <Link to={{
                                 pathname: "/scoreboard/",
-                                state: props.scoreboard
+                                state: props.scoreboard,
+                                username:props.username
                             }}>
                                 <img src={finish}/>
                             </Link>

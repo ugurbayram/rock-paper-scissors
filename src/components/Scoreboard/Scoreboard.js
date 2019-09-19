@@ -29,7 +29,7 @@ export const Scoreboard = props => {
                     <thead>
                     <tr className="w3-light-grey">
                         <th>Rounds</th>
-                        <th>I Played</th>
+                        <th>{props.location.username} Played</th>
                         <th>Computer Played</th>
                         <th>Result</th>
                     </tr>
